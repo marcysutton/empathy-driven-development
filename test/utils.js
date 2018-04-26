@@ -1,7 +1,7 @@
-import { configure, mount } from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
+const Enzyme = require('enzyme')
+const Adapter = require('enzyme-adapter-react-16')
 
-configure({ adapter: new Adapter() })
+Enzyme.configure({ adapter: new Adapter() })
 
 let wrapper
 
@@ -16,7 +16,7 @@ var utils = {
       document.body.appendChild(wrapper)
     }
   
-    const container = mount(reactElm)
+    const container = Enzyme.mount(reactElm)
     wrapper.innerHTML = ''
     wrapper.appendChild(container.getDOMNode())
     return container
@@ -35,9 +35,9 @@ var utils = {
         output += '  Target: ' + node.target + '\n\n'
       }))
 
-      console.log(output)
+      return output
     })
   }
 }
 
-export default utils
+module.exports = utils

@@ -35,7 +35,7 @@ describe('Login page', function() {
 		  .then(function() {
 		    new AxeBuilder(driver)
 		      .analyze(function(results) {
-		      	TestUtils.printViolations(results.violations);
+		      	console.log(TestUtils.printViolations(results.violations));
 		        assert.equal(results.violations.length, 0);
 		        done();
 		      });

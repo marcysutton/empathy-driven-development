@@ -21,9 +21,11 @@ test('Form has no accessibility violations', (done) => {
 
     axe.run(formNode, config)
         .then(({ violations }) => {
-            expect(violations).toHaveLength(0)
-        })
-        .catch((err) => {
-            done.fail(err)
+            if (violations.length) {
+                const err = utils.printViolations(violations)
+                done.fail(err)
+            } else {
+                done()
+            }
         })
 })
