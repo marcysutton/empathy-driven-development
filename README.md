@@ -19,9 +19,9 @@ https://marcysutton.github.io/empathy-driven-development
 
 
 ### Components
-- Login form
-- Card-flip component
-- Live region with title change
+- Login form (fixed in [v1.0.2](https://github.com/marcysutton/empathy-driven-development/tree/v1.0.2))
+- Card-flip component (fixed in [v1.0.3](https://github.com/marcysutton/empathy-driven-development/tree/v1.0.3))
+- Screen-reader accessible title change (fixed in [v1.0.4](https://github.com/marcysutton/empathy-driven-development/tree/v1.0.4))
 
 
 
@@ -61,3 +61,13 @@ https://marcysutton.github.io/empathy-driven-development
 - Manual testing: content quality, contrast edge cases, error validation messaging, event handling & interactions
 - More on manual testing: https://www.deque.com/blog/manual-accessibility-testing-approach/
 - Usability testing with people with disabilities https://access-works.com
+
+
+
+
+### In this app
+
+- axe-core https://github.com/dequelabs/axe-core
+- What Input https://github.com/ten1seven/what-input
+- Focus-trap-react https://github.com/davidtheclark/focus-trap-react
+- react-announce-doc-title https://github.com/marcysutton/react-announce-doc-title
