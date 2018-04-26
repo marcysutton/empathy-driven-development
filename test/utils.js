@@ -22,21 +22,33 @@ var utils = {
     return container
   },
   printViolations: function(violations) {
+    let output = '\n'
     violations.forEach((violation) => {
-      let output = ''
       let nodes = violation.nodes.map((node) => '  - ' + node.target).join('\n')
 
       output += '---- ' + violation.id + ' ----\n'
       output += 'Help: ' + violation.help + '\n'
       output += 'Affected Nodes: \n'
 
-      violation.nodes.forEach((node) => node.any.forEach((item) => {
-        output += '- ' + item.message + '\n'
-        output += '  Target: ' + node.target + '\n\n'
-      }))
+      violation.nodes.forEach((node) => {
+        if (node.any.length) {
+          output += '\n Target: ' + node.target + '\n\n'
+          output += '  Fix ANY of the following:\n'
+          node.any.forEach((item) => {
+            output += '  - ' + item.message + '\n'
+          })
+        }
 
-      return output
+        if (node.all.length) {
+          output += '\n Target: ' + node.target + '\n\n'
+          output += '  Fix ALL of the following: \n'
+          node.all.forEach((item) => {
+            output += '  - ' + item.message + '\n'
+          })
+        }
+      })
     })
+    return output
   }
 }
 
