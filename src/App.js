@@ -7,7 +7,6 @@ import {
 import './App.css'
 
 import LoginFormDemo from './pages/login-form-demo'
-import MenuDemo from './pages/menu-demo'
 import LiveRegionDemo from './pages/live-region-demo'
 import CardFlipDemo from './pages/card-flip-demo'
 
@@ -30,14 +29,10 @@ class App extends Component {
               <li><NavLink 
                   to="/live-region"
                   >Live Region</NavLink> <span></span></li>
-              <li><NavLink 
-                  to="/menu"
-                  >Menu</NavLink> <span></span></li>
             </ul>
           </header>
           <div className="main">
             <Route path="/login-form" component={LoginFormDemo}/>
-            <Route path="/menu" component={MenuDemo}/>
             <Route path="/live-region" component={LiveRegionDemo}/>
             <Route path="/card-flip" component={CardFlipDemo}/>
           </div>

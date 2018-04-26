@@ -19,9 +19,8 @@ https://marcysutton.github.io/empathy-driven-development
 
 
 ### Components
-- Card-flip component
-- Desktop-style menu
 - Login form
+- Card-flip component
 - Live region with title change
 
 
@@ -34,7 +33,7 @@ https://marcysutton.github.io/empathy-driven-development
 
 - PEOPLE, who are diverse creatures.
 - 15% of the population has some kind of disability. http://www.who.int/disabilities/world_report/2011/report/en/
-- Don't leave people behind.
+- Don’t leave people behind.
 
 
 
@@ -50,8 +49,10 @@ https://marcysutton.github.io/empathy-driven-development
 - Egghead.io A11y course https://egghead.io/courses/start-building-accessible-web-applications-today
 - Udacity Course https://www.udacity.com/course/web-accessibility--ud891
 - Notes on Client-Rendered Accessibility https://www.smashingmagazine.com/2015/05/client-rendered-accessibility/
+- aXe Accessibility Testing Tools https://axe-core.org
 
 
+ 
 
 
 
