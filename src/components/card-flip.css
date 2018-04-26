@@ -61,7 +61,7 @@
     z-index: 100;
     border-radius: 90px;
 }
-.team-image:hover .team-content-hover {
+.team-image.hover .team-content-hover {
     opacity: 1;
     visibility: visible;
     margin-left: calc(95px - 50%);
@@ -101,7 +101,7 @@
     -o-transition: 0.25s ease-in;
     transition: 0.25s ease-in;
 }
-.team-image:hover .team-content-hover p {
+.team-image.hover .team-content-hover p {
     opacity: 1;
     font-size: 12px;
 }
@@ -120,14 +120,7 @@
     outline: 0;
     text-decoration: none;
 }
-.team-socials .fa {
-    color: white;
+.team-socials svg {
     margin: 0 10px;
-    font-family: FontAwesome;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s;
-    font-size: 12px;
-    font-weight: 400;
-    text-transform: uppercase;
+    width: 18px;
 }
