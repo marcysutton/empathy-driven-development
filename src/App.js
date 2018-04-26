@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom'
 import './App.css'
 
-import LoginForm from './pages/login-form-demo'
+import LoginFormDemo from './pages/login-form-demo'
 import MenuDemo from './pages/menu-demo'
 import LiveRegionDemo from './pages/live-region-demo'
 import CardFlipDemo from './pages/card-flip-demo'
@@ -36,7 +36,7 @@ class App extends Component {
             </ul>
           </header>
           <div className="main">
-            <Route path="/login-form" component={LoginForm}/>
+            <Route path="/login-form" component={LoginFormDemo}/>
             <Route path="/menu" component={MenuDemo}/>
             <Route path="/live-region" component={LiveRegionDemo}/>
             <Route path="/card-flip" component={CardFlipDemo}/>

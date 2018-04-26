@@ -1,23 +1,21 @@
 import React, { Component } from 'react'
 
-class LoginForm extends Component {
-  render() {
-    return (
-        <form className="login-form">
-            <h2>Enter your personal details</h2>
-            <div className="form-group">
-                <input type="text" placeholder="First name" />
-                <input type="text" placeholder="Last name" />
-            </div>
-            <div className="form-group">
-                <input type="text" placeholder="Email" />
-            </div>
-            <div className="form-group">
-                <input type="submit" />
-            </div>
-        </form>
-    )
-  }
+import LoginForm from '../components/login-form'
+
+class LoginFormDemo extends Component {
+    render() {
+        let fields = [
+            'First name',
+            'Last name',
+            'Email'
+        ]
+        return (
+            <LoginForm
+                headline='Enter your personal details'
+                fields={ fields }
+            />
+        )
+    }
 }
 
-export default LoginForm
+export default LoginFormDemo
