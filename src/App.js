@@ -27,10 +27,10 @@ class App extends Component {
                   >Card Flip</NavLink> <span></span></li>
             </ul>
           </header>
-          <div className="main">
+          <main className="main">
             <Route path="/login-form" component={LoginFormDemo}/>
             <Route path="/card-flip" component={CardFlipDemo}/>
-          </div>
+          </main>
         </div>
       </Router>
     )
