@@ -37,6 +37,9 @@ a, a:link {
   width: 100%;
 }
 
+.login-form .form-group {
+  color: #ddd;
+}
 .login-form .form-group input {
   font-size: 0.8em;
   padding: 0.25em 0.5em;
@@ -44,7 +47,7 @@ a, a:link {
 .login-form .form-group input[type=text] {
   display: block;
   min-width: 320px;
-  margin: 1em 0;
+  margin: 0.5em 0 2em;
 }
 .login-form input[type=submit] {
   background-color: #ffd652;
@@ -56,4 +59,15 @@ a, a:link {
 
 .login-form input[type=submit]:hover {
   background-color: #ffc300;
+}
+
+@media screen and (max-width: 600px) {
+  .App {
+    flex-direction: column;
+  }
+  .main {
+    height: 100%;
+    margin-left: 0;
+    width: auto;
+  }
 }
