@@ -4,14 +4,26 @@
 .team-member {
     position: relative;
 }
+[data-whatintent='mouse'] .team-content *:focus {
+    outline: none;
+}
 .team-content {
     padding: 0;
     position: relative;
     z-index: 100;
     margin-top: 0;
-    margin-bottom: 50px;
-    max-width: 320px;
+    margin-bottom: 0px;
+    width: 320px;
     text-align: center;
+}
+.team-content button {
+    background-color: transparent;
+    border: none;
+    color: currentColor;
+    -webkit-appearance: none;
+}
+.team-content .toggle-button * {
+    text-decoration: underline;
 }
 .team-image {
     width: 190px;
@@ -32,7 +44,7 @@
     margin-bottom: 10px;
 }
 .team-content .team-subtitle {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     display: block;
     font-size: 14px;
     font-style: italic;
@@ -45,14 +57,16 @@
     height: auto;
     width: 100%;
 }
-.team-content-hover {
+.team-content-overlay {
     top: 0;
     padding: 40px 35px;
     position: absolute;
     width: 190px;
     overflow: hidden;
+    min-height: 190px;
     max-height: 190px;
     height: auto;
+    left: 60px;
     opacity: 0.5;
     visibility: hidden;
     -webkit-transition: 0.25s ease-in;
@@ -61,17 +75,17 @@
     z-index: 100;
     border-radius: 90px;
 }
-.team-image.hover .team-content-hover {
+.active .team-content-overlay {
     opacity: 1;
     visibility: visible;
     margin-left: calc(95px - 50%);
-    margin-top: -50px;
+    margin-top: 30px;
     max-height: 400px;
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
-.team-content-hover .gradient-overlay {
+.team-content-overlay .gradient-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -79,17 +93,24 @@
     top: 0;
     left: 0;
 }
-.team-content .team-content-hover h5 {
+.team-content .team-content-overlay h5 {
     color: #fff;
     font-size: 18px;
     font-weight: 700;
     position: relative;
 }
-.team-content .team-content-hover .team-subtitle {
+.team-content .team-content-overlay .team-subtitle {
     color: #fff;
     position: relative;
 }
-.team-content-hover p {
+.team-close-button {
+    border: none;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.team-content-overlay p {
     color: #fff;
     opacity: 0;
     font-size: 8px;
@@ -101,7 +122,7 @@
     -o-transition: 0.25s ease-in;
     transition: 0.25s ease-in;
 }
-.team-image.hover .team-content-hover p {
+.active .team-content-overlay p {
     opacity: 1;
     font-size: 12px;
 }

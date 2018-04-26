@@ -8,13 +8,15 @@
   },
   "dependencies": {
     "create-react-class": "^15.6.3",
+    "focus-trap-react": "^3.1.2",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-menu-aim": "^2.0.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
-    "react-test-renderer": "^16.3.1"
+    "react-test-renderer": "^16.3.1",
+    "what-input": "^5.0.5"
   },
   "devDependencies": {
     "axe-core": "^3.0.2",
@@ -26,8 +28,7 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "jest-enzyme": "^6.0.0",
     "mocha": "^5.1.1",
-    "selenium-webdriver": "^3.6.0",
-    "simulant": "^0.2.2"
+    "selenium-webdriver": "^3.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
