@@ -1,0 +1,59 @@
+.App {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.App-header {
+  flex-direction: column;
+  padding: 20px;
+}
+.Component-list {
+  line-height: 1.5;
+  font-size: 1.25em;
+}
+.Component-list .active + span:after {
+  content: '👈';
+}
+a, a:link {
+  color: black;
+  font-weight: bold;
+}
+
+.main {
+  background: url(./images/white-blocks.jpg) no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  width: 70%;
+}
+
+.main > * {
+  background-color: #222;
+  box-sizing: border-box;
+  color: white;
+  padding: 2em;
+  height: 100%;
+  width: 100%;
+}
+
+.login-form .form-group input {
+  font-size: 0.8em;
+  padding: 0.25em 0.5em;
+}
+.login-form .form-group input[type=text] {
+  display: block;
+  min-width: 320px;
+  margin: 1em 0;
+}
+.login-form input[type=submit] {
+  background-color: #ffd652;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  -webkit-appearance: none;
+}
+
+.login-form input[type=submit]:hover {
+  background-color: #ffc300;
+}

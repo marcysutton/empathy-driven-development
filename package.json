@@ -1,0 +1,51 @@
+{
+  "name": "empathy-driven-development",
+  "version": "1.0.0",
+  "description": "Presentation on accessible web development and testing",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "create-react-class": "^15.6.3",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-menu-aim": "^2.0.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "react-test-renderer": "^16.3.1"
+  },
+  "devDependencies": {
+    "axe-webdriverjs": "^2.0.0",
+    "babel-core": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "chai": "^4.1.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest-enzyme": "^6.0.0",
+    "mocha": "^5.1.1",
+    "selenium-webdriver": "^3.6.0",
+    "simulant": "^0.2.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "integration": "mocha"
+  },
+  "config": {
+    "port": "3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcysutton/empathy-driven-development.git"
+  },
+  "author": "Marcy Sutton (https://www.marcysutton.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcysutton/empathy-driven-development/issues"
+  },
+  "homepage": "https://github.com/marcysutton/empathy-driven-development#readme"
+}
