@@ -10,7 +10,7 @@
 
 ```
 
-# BY MARCY SUTTON / @marcysutton
+# By Marcy Sutton / @marcysutton
 
 ## Empathy Driven Development
 https://marcysutton.github.io/empathy-driven-development
