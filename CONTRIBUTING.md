@@ -10,6 +10,7 @@ Below you will find some information on how to perform common tasks.
 - [Available Scripts](#available-scripts)
   - [npm start](#npm-start)
   - [npm test](#npm-test)
+  - [npm run integration](#npm-run-integration)
   - [npm run build](#npm-run-build)
   - [npm run eject](#npm-run-eject)
 - [Required Polyfills](#required-polyfills)
@@ -79,6 +80,10 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.<br>
 See the section about [running tests](#running-tests) for more information.
+
+### `npm run integration`
+
+Runs the integration tests with Selenium Webdriver. Requires running `npm start` in another tab.
 
 ### `npm run build`
 
