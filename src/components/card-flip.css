@@ -4,9 +4,9 @@
 .team-member {
     position: relative;
 }
-[data-whatintent='mouse'] .team-content *:focus {
+/* [data-whatintent='mouse'] .team-content *:focus {
     outline: none;
-}
+} */
 .team-content {
     padding: 0;
     position: relative;

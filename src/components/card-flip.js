@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import FocusTrap from 'focus-trap-react'
-import 'what-input'
 
 import './card-flip.css'
 
