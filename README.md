@@ -20,8 +20,8 @@ https://github.com/marcysutton/empathy-driven-development
 
 ### Components
 - Login form (fixed in [v1.0.2](https://github.com/marcysutton/empathy-driven-development/tree/v1.0.2))
-- Card-flip component (fixed in [v1.0.3](https://github.com/marcysutton/empathy-driven-development/tree/v1.0.3))
-- Screen-reader accessible title change (fixed in [v1.0.4](https://github.com/marcysutton/empathy-driven-development/tree/v1.0.4))
+- Card-flip component (fixed in [v1.0.3](https://github.com/marcysutton/empathy-driven-development/tree/v1.0.3) and  [v1.0.4](https://github.com/marcysutton/empathy-driven-development/tree/v1.0.4))
+- Screen-reader accessible title change (fixed in [v1.0.5](https://github.com/marcysutton/empathy-driven-development/tree/v1.0.5))
 
 
 
