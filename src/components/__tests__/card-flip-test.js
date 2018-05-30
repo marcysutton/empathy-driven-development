@@ -29,7 +29,7 @@ describe('Card flipping', () => {
         
         component.setState({ isActive: true })
 
-        expect(component.find('.team-image.active').length).toBe(1)
+        expect(component.find('.active').length).toBe(1)
         done()
     })
     
@@ -43,10 +43,12 @@ describe('Card flipping', () => {
                 twitterLink={member.twitterLink} />
         )
 
-        component.simulate('keydown', { key: 'Enter' })
+        component.find('.toggle-button').simulate('keydown', { key: 'Enter' })
 
-        expect(component.find('.team-image.active').length).toBe(1)
-        done()
+        setTimeout(() => {
+            expect(component.find('.active').length).toBe(1)
+            done()
+        })
     })
 
     test('Accessibility API testing', (done) => {
