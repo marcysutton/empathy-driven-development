@@ -15,7 +15,7 @@ class CardFlip extends Component {
         })
     }
     render() {
-        const activeClass = this.state.isActive ? "hover" : ""
+        const activeClass = this.state.isActive ? "active" : ""
         return (
             <div className="team-member">
                 <div className="team-content">

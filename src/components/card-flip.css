@@ -61,7 +61,7 @@
     z-index: 100;
     border-radius: 90px;
 }
-.team-image.hover .team-content-hover {
+.team-image.active .team-content-hover {
     opacity: 1;
     visibility: visible;
     margin-left: calc(95px - 50%);
@@ -101,7 +101,7 @@
     -o-transition: 0.25s ease-in;
     transition: 0.25s ease-in;
 }
-.team-image.hover .team-content-hover p {
+.team-image.active .team-content-hover p {
     opacity: 1;
     font-size: 12px;
 }
