@@ -76,6 +76,9 @@ a, a:link {
   .App {
     flex-direction: column;
   }
+  .App-header {
+    width: auto;
+  }
   .main {
     height: 100%;
     margin-left: 0;
