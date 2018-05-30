@@ -1,13 +1,23 @@
-.App {
-  display: flex;
+html, body {
   height: 100%;
-  position: absolute;
+}
+#root {
+  display: inline;
+}
+.App {
+  background: url(./images/white-blocks.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  min-height: 100%;
   width: 100%;
 }
 
 .App-header {
   flex-direction: column;
   padding: 20px;
+  width: 30%;
 }
 .Component-list {
   line-height: 1.5;
@@ -22,8 +32,8 @@ a, a:link {
 }
 
 .main {
-  background: url(./images/white-blocks.jpg) no-repeat;
-  background-size: cover;
+  flex-direction: column;
+  flex: 1;
   margin-left: auto;
   width: 70%;
 }
@@ -32,8 +42,8 @@ a, a:link {
   background-color: #222;
   box-sizing: border-box;
   color: white;
-  padding: 2em;
   height: 100%;
+  padding: 2em;
   width: 100%;
 }
 
