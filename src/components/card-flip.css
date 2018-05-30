@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+[data-whatintent='mouse'] .team-content *:focus {
+    outline: none;
+}
 .team-member {
     display: inline-block;
     position: relative;
@@ -130,7 +133,6 @@
 }
 .team-socials a {
     color: #225165;
-    outline: 0;
     text-decoration: none;
 }
 .team-socials svg {
