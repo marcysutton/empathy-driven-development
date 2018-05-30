@@ -6,7 +6,7 @@ const TestUtils = require('./utils.js');
 
 var port = process.env.npm_package_config_port || 3006;
 
-describe('Login page', function() {
+describe('Card flip demo page', function() {
 	this.timeout(10000);
 
 	let driver;
@@ -17,7 +17,7 @@ describe('Login page', function() {
 			.build();
 		
 		driver
-			.get(`http://localhost:${port}/login-form`)
+			.get(`http://localhost:${port}/card-flip`)
 		  .then(function() {
   			done();
 		  })
@@ -27,6 +27,22 @@ describe('Login page', function() {
 		driver.quit().then(function() {
 			done();
 		});
+	});
+
+	it('should work with the keyboard', function(done) {
+		async function test() {
+			const toggle = await driver.findElement(Selenium.By.css('.toggle-button'))
+
+			await toggle.sendKeys(Selenium.Key.ENTER)
+
+			const closeTxt = await driver.findElement(Selenium.By.css('.team-close-button')).getText()
+
+			const activeElementTxt = await driver.switchTo().activeElement().getText()
+			assert.equal(activeElementTxt, closeTxt)
+			
+			done()
+		}
+		test()
 	});
 
 	it('should find no violations', function(done) {
