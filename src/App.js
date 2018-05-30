@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <header className="App-header">
+          <header className="App-header" role="banner">
             <h1 className="App-title">
               <NavLink to="/">Component Library</NavLink>
             </h1>
@@ -31,11 +31,11 @@ class App extends Component {
                   >Menu</NavLink> <span></span></li>
             </ul>
           </header>
-          <div className="main">
+          <main className="main" role="main">
             <Route path="/login-form" component={LoginFormDemo}/>
             <Route path="/card-flip" component={CardFlipDemo}/>
             <Route path="/menu" component={MenuDemo}/>
-          </div>
+          </main>
         </div>
       </Router>
     )
