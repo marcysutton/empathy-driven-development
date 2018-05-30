@@ -39,12 +39,11 @@
 .menu .menu-item,
 .sub-menu .sub-menu-item {
     line-height: 30px;
-    padding: 0 20px;
+    padding: 0 30px 0 20px;
     border-top: 1px #eee solid;
     cursor: pointer;
     white-space: nowrap;
     font-size: 16px;
-    font-family: monospace;
 }
 
 .menu .menu-item:first-child {
