@@ -15,6 +15,7 @@ html, body {
 }
 
 .App-header {
+  background-color: #fff;
   flex-direction: column;
   padding: 20px;
   width: 30%;
