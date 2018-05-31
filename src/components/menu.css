@@ -5,27 +5,9 @@
     height: 0;
     clear: both;
 }
-
-.menu-container.below {
+.menu {
     position: relative;
 }
-
-.menu-container.below .menu {
-    width: 100%;
-}
-
-.menu-container.below .menu .menu-item {
-    float: left;
-    border: none;
-}
-
-.menu-container.below .sub-menu {
-    position: absolute;
-    top: 30px;
-    border: 1px #eee solid;
-    border-top: none;
-}
-
 .menu, .sub-menu {
     float: left;
     height: 100%;

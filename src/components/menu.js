@@ -7,12 +7,6 @@ import './menu.css'
 var Menu = createReactClass({
   mixins: [ReactMenuAim],
 
-  getDefaultProps: function() {
-    return {
-      submenuDirection: 'right'
-    };
-  },
-
   getInitialState: function() {
     return {
       activeMenuIndex: 0
@@ -21,7 +15,6 @@ var Menu = createReactClass({
 
   componentWillMount: function() {
     this.initMenuAim({
-      submenuDirection: this.props.submenuDirection,
       menuSelector: '.menu',
       delay: 300,
       tolerance: 75
@@ -36,11 +29,7 @@ var Menu = createReactClass({
 
   render: function() {
     var self = this;
-    var containerClassName = 'menu-container ' + this.props.submenuDirection;
 
-    var subMenuStyle = {};
-    if (this.props.submenuDirection === 'below') {
-      subMenuStyle.left = this.state.activeMenuIndex * 140;
     }
 
     return (
