@@ -9,38 +9,53 @@
     position: relative;
 }
 .menu, .sub-menu {
-    float: left;
     height: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
-    border: 1px #eee solid;
     box-sizing: border-box;
 }
-
+.menu .menu-item button {
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px #eee solid;
+    border-width: 1px 1px 0;
+    color: inherit;
+    display: inline-block;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 0 20px;
+    min-width: 180px;
+    -webkit-appearance: none;
+    text-align: left;
+}
+.menu-item:last-child button {
+    border-bottom-width: 1px;
+}
+.menu-item.active button {
+    border-right-width: 0;
+}
+.sub-menu {
+    border: 1px #eee solid;
+    position: absolute;
+    left: 190px;
+    top: 0;
+}
 .menu .menu-item,
 .sub-menu .sub-menu-item {
     line-height: 30px;
     padding: 0 30px 0 20px;
-    border-top: 1px #eee solid;
     cursor: pointer;
     white-space: nowrap;
     font-size: 16px;
 }
 
-.menu .menu-item:first-child {
-    border-top: none;
-}
-
-.menu .menu-item.active {
+.menu .menu-item.active button {
     color: #f40;
-    border-right: 1px #fff solid;
-    margin-right: -1px;
 }
 
 .sub-menu {
     border-left: none;
-    min-height: 280px;
 }
 
 .sub-menu .sub-menu-item {
