@@ -1,3 +1,6 @@
+.menu-container {
+    background-color: inherit;
+}
 .menu-container:before,
 .menu-container:after {
     content: '';
@@ -27,6 +30,7 @@
 }
 
 .menu, .sub-menu {
+    background-color: inherit;
     float: left;
     height: 100%;
     list-style: none;
@@ -51,8 +55,8 @@
 }
 
 .menu .menu-item.active {
+    background-color: inherit;
     color: #f40;
-    border-right: 1px #fff solid;
     margin-right: -1px;
 }
 
