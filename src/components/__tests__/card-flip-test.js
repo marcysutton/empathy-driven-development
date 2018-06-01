@@ -47,8 +47,8 @@ describe('Card flipping', () => {
 
         setTimeout(() => {
             expect(component.find('.active').length).toBe(1)
-            done()
         })
+        done()
     })
 
     test('Accessibility API testing', (done) => {
