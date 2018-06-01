@@ -19,9 +19,10 @@ https://github.com/marcysutton/empathy-driven-development
 
 
 ### Components
-- Login form (fixed in [v1.0.2](https://github.com/marcysutton/empathy-driven-development/tree/v1.0.2))
-- Card-flip component (fixed in [v1.0.3](https://github.com/marcysutton/empathy-driven-development/tree/v1.0.3) and  [v1.0.4](https://github.com/marcysutton/empathy-driven-development/tree/v1.0.4))
-- Screen-reader accessible title change (fixed in [v1.0.5](https://github.com/marcysutton/empathy-driven-development/tree/v1.0.5))
+- Login Form  - fixed in [v2.0.1](https://github.com/marcysutton/empathy-driven-development/tree/v2.0.1)
+- Card Flip - fixed in [v2.0.2](https://github.com/marcysutton/empathy-driven-development/tree/v2.0.2) & [v2.0.3](https://github.com/marcysutton/empathy-driven-development/tree/v2.0.3)
+- Desktop-Style Menu - fixed in [v2.0.4](https://github.com/marcysutton/empathy-driven-development/tree/v2.0.4) & [v2.0.5](https://github.com/marcysutton/empathy-driven-development/tree/v2.0.5)
+
 
 
 
@@ -67,7 +68,6 @@ https://github.com/marcysutton/empathy-driven-development
 
 ### In this app
 
+- axe-webdriverjs https://github.com/dequelabs/axe-webdriverjs
 - axe-core https://github.com/dequelabs/axe-core
 - What Input https://github.com/ten1seven/what-input
-- Focus-trap-react https://github.com/davidtheclark/focus-trap-react
-- react-announce-doc-title https://github.com/marcysutton/react-announce-doc-title
