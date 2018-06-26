@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 .team-member {
+    display: inline-block;
     position: relative;
 }
 .team-content {
