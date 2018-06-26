@@ -24,7 +24,7 @@ https://github.com/marcysutton/empathy-driven-development
 - Card Flip - fixed in [v3.0.3](https://github.com/marcysutton/empathy-driven-development/tree/v3.0.3) & [v3.0.4](https://github.com/marcysutton/empathy-driven-development/tree/v3.0.4)
 - Animation toggle - introduced in [v3.0.5](https://github.com/marcysutton/empathy-driven-development/tree/v3.0.5),
  fixed in [v3.0.6](https://github.com/marcysutton/empathy-driven-development/tree/v3.0.6) & [v3.0.7](https://github.com/marcysutton/empathy-driven-development/tree/v3.0.7)
-
+- Accessible title changes - fixed in [v3.0.8](https://github.com/marcysutton/empathy-driven-development/tree/v3.0.8)
 
 
 
@@ -74,3 +74,4 @@ https://github.com/marcysutton/empathy-driven-development
 - axe-core https://github.com/dequelabs/axe-core
 - What Input https://github.com/ten1seven/what-input
 - Prefers Reduced Motion https://css-tricks.com/introduction-reduced-motion-media-query/
+- react-announce-doc-title https://github.com/marcysutton/react-announce-doc-title
