@@ -141,3 +141,10 @@
     margin: 0 10px;
     width: 18px;
 }
+@media screen and (prefers-reduced-motion) { 
+    .team-content-overlay {
+        -webkit-transition: 0 !important;
+        -o-transition: 0 !important;
+        transition: 0 !important;
+    }
+}

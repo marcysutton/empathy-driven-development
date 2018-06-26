@@ -97,3 +97,8 @@ a, a:link {
     width: auto;
   }
 }
+@media screen and (prefers-reduced-motion) { 
+  .Animation-pref {
+      display: none;
+  }
+}
