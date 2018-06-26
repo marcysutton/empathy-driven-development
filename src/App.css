@@ -16,6 +16,7 @@ html, body {
 
 .App-header {
   background-color: #fff;
+  display: flex;
   flex-direction: column;
   padding: 20px;
   width: 30%;
@@ -31,7 +32,18 @@ a, a:link {
   color: black;
   font-weight: bold;
 }
-
+.Animation-pref {
+  background-color: #555;
+  border: 0;
+  color: white;
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: bold;
+  margin-top: auto;
+  padding: 0.5em;
+  width: 130px;
+  -webkit-appearance: none;
+}
 .main {
   flex-direction: column;
   flex: 1;

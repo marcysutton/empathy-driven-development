@@ -11,6 +11,20 @@ import CardFlipDemo from './pages/card-flip-demo'
 import MenuDemo from './pages/menu-demo'
 
 class App extends Component {
+
+  constructor (props) {
+    super(props)
+    this.state = {
+        animationEnabled: true
+    }
+  }
+
+  handleAnimationPref() {
+    this.setState({
+      animationEnabled: !this.state.animationEnabled
+    })
+  }
+
   render() {
     return (
       <Router>
@@ -27,6 +41,11 @@ class App extends Component {
                   to="/card-flip"
                   >Card Flip</NavLink> <span></span></li>
             </ul>
+              <button
+                className="Animation-pref"
+                onClick={this.handleAnimationPref.bind(this)}>
+                Turn {this.state.animationEnabled ? 'off' : 'on'} animations<br />
+              </button>
           </header>
           <main className="main" role="main">
             <Route path="/login-form" component={LoginFormDemo}/>
