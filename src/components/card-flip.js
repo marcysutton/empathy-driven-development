@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {AnimationContext} from '../animation-context'
 import 'what-input'
 
 import './card-flip.css'
@@ -56,27 +57,30 @@ class CardFlip extends Component {
             </div>
         </div>
         return (
-            <div className="team-member">
-                <div className={`team-content ${activeClass}`}>
-                    <button className="toggle-button"
-                        onClick={this.handleClick.bind(this)}
-                        ref={this.toggleButton}
-                    >
-                        <span className="team-image">
-                            <img src={this.props.image} alt="" />
-                        </span>
-                        <span className="team-title">{this.props.memberName}</span>
-                        <span className="team-subtitle">{this.props.subtitle}</span>
-                    </button>
+            <AnimationContext.Consumer>
+                {animationEnabled =>
+                 <div className={`team-member ${animationEnabled}`}>
+                    <div className={`team-content ${activeClass}`}>
+                        <button className="toggle-button"
+                            onClick={this.handleClick.bind(this)}
+                            ref={this.toggleButton}
+                        >
+                            <span className="team-image">
+                                <img src={this.props.image} alt="" />
+                            </span>
+                            <span className="team-title">{this.props.memberName}</span>
+                            <span className="team-subtitle">{this.props.subtitle}</span>
+                        </button>
 
-                    <div role="dialog"
-                        className="team-content-overlay"
-                        style={{ background: "#1c6300" }}
-                    >
-                        {overlay}
+                        <div role="dialog"
+                            className="team-content-overlay"
+                            style={{ background: "#1c6300" }}
+                        >
+                            {overlay}
+                        </div>
                     </div>
-                </div>
-            </div>
+                </div>}
+            </AnimationContext.Consumer>
         )
     }
 }

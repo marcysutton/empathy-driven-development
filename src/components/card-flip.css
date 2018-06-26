@@ -72,11 +72,13 @@
     left: 60px;
     opacity: 0.5;
     visibility: hidden;
+    z-index: 100;
+    border-radius: 90px;
+}
+.animationsOn .team-content-overlay {
     -webkit-transition: 0.25s ease-in;
     -o-transition: 0.25s ease-in;
     transition: 0.25s ease-in;
-    z-index: 100;
-    border-radius: 90px;
 }
 .active .team-content-overlay {
     opacity: 1;
