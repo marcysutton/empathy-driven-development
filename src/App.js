@@ -26,15 +26,15 @@ class App extends Component {
                 <li><NavLink 
                   to="/card-flip"
                   >Card Flip</NavLink> <span></span></li>
-                <li><NavLink 
+                {/* <li><NavLink 
                   to="/menu"
-                  >Menu</NavLink> <span></span></li>
+                  >Menu</NavLink> <span></span></li> */}
             </ul>
           </header>
           <div className="main">
             <Route path="/login-form" component={LoginFormDemo}/>
             <Route path="/card-flip" component={CardFlipDemo}/>
-            <Route path="/menu" component={MenuDemo}/>
+            {/* <Route path="/menu" component={MenuDemo}/> */}
           </div>
         </div>
       </Router>
