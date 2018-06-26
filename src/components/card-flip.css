@@ -10,8 +10,8 @@
     position: relative;
     z-index: 100;
     margin-top: 0;
-    margin-bottom: 50px;
-    max-width: 320px;
+    margin-bottom: 0px;
+    width: 320px;
     text-align: center;
 }
 .team-image {
