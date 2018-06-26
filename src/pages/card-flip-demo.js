@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import AnnounceDocTitle from 'react-announce-doc-title'
 import CardFlip from '../components/card-flip'
 
 const members = [{
@@ -19,6 +20,7 @@ const members = [{
 class CardFlipDemo extends Component {
   render() {
     return (
+      <AnnounceDocTitle title='Card Flip - Component Library'>
         <div>
             <CardFlip
               member={members[0]}
@@ -36,6 +38,7 @@ class CardFlipDemo extends Component {
               twitterLink={members[1].twitterLink}
             />
         </div>
+      </AnnounceDocTitle>
     )
   }
 }
