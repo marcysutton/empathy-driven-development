@@ -10,9 +10,9 @@ const members = [{
   twitterLink: 'http://twitter.com'
 },
 {
-  name: 'Bagley the Cat',
+  name: 'Bagley Fluffpants',
   headshot: require('../images/bagley.jpg'),
-  subtitle: 'Siberian floof, supreme loaf',
+  subtitle: 'Cheshire cat, supreme loaf',
   bio: "The door is opening! how exciting oh, it's you, meh drink water out of the faucet. Spend six hours per day washing, but still have a crusty butthole, so lies down or sit on human they not getting up ever, but lick human with sandpaper tongue.",
   twitterLink: 'http://twitter.com'
 }]
