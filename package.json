@@ -13,17 +13,15 @@
     "react-menu-aim": "^2.0.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.4",
+    "react-scripts": "^2.1.0",
     "react-test-renderer": "^16.3.1"
   },
   "devDependencies": {
     "axe-core": "^3.0.2",
     "axe-webdriverjs": "^2.0.0",
-    "babel-core": "^6.26.0",
-    "babel-runtime": "^6.26.0",
     "chai": "^4.1.2",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
     "jest-enzyme": "^6.0.0",
     "mocha": "^5.1.1",
     "selenium-webdriver": "^3.6.0",
@@ -48,5 +46,11 @@
   "bugs": {
     "url": "https://github.com/marcysutton/empathy-driven-development/issues"
   },
-  "homepage": "https://github.com/marcysutton/empathy-driven-development#readme"
+  "homepage": "https://github.com/marcysutton/empathy-driven-development#readme",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
