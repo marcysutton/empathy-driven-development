@@ -1,56 +1,45 @@
 {
-  "name": "empathy-driven-development",
-  "version": "1.0.0",
-  "description": "Presentation on accessible web development and testing",
-  "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "create-react-class": "^15.6.3",
-    "react": "^16.3.1",
-    "react-dom": "^16.3.1",
+    "gatsby": "^2.3.31",
+    "gatsby-image": "^2.0.40",
+    "gatsby-plugin-manifest": "^2.0.29",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sharp": "^2.0.35",
+    "gatsby-source-filesystem": "^2.0.32",
+    "gatsby-transformer-sharp": "^2.1.18",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.0",
     "react-menu-aim": "^2.0.0",
-    "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "^2.1.0",
-    "react-test-renderer": "^16.3.1"
+    "react-modal": "^3.8.1"
   },
   "devDependencies": {
-    "axe-core": "^3.0.2",
-    "axe-webdriverjs": "^2.0.0",
-    "chai": "^4.1.2",
-    "enzyme": "^3.7.0",
-    "enzyme-adapter-react-16": "^1.6.0",
-    "jest-enzyme": "^6.0.0",
-    "mocha": "^5.1.1",
-    "selenium-webdriver": "^3.6.0",
-    "simulant": "^0.2.2"
+    "prettier": "^1.17.0"
   },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "integration": "mocha"
-  },
-  "config": {
-    "port": "3000"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marcysutton/empathy-driven-development.git"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   },
-  "author": "Marcy Sutton (https://www.marcysutton.com)",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/marcysutton/empathy-driven-development/issues"
-  },
-  "homepage": "https://github.com/marcysutton/empathy-driven-development#readme",
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
 }

@@ -11,20 +11,16 @@
 ```
 
 # By Marcy Sutton / @marcysutton
+Head of Learning, Gatsby
 
-## Empathy Driven Development
+## Empathy Driven Development - Live Accessibility Debugging in a Gatsby / React Application
 https://github.com/marcysutton/empathy-driven-development
 
 
 
 
 ### Components
-- Landmarks -  fixed in [v3.0.1](https://github.com/marcysutton/empathy-driven-development/tree/v3.0.1)
-- Login Form - fixed in [v3.0.2](https://github.com/marcysutton/empathy-driven-development/tree/v3.0.2)
-- Card Flip - fixed in [v3.0.3](https://github.com/marcysutton/empathy-driven-development/tree/v3.0.3) & [v3.0.4](https://github.com/marcysutton/empathy-driven-development/tree/v3.0.4)
-- Animation toggle - introduced in [v3.0.5](https://github.com/marcysutton/empathy-driven-development/tree/v3.0.5),
- fixed in [v3.0.6](https://github.com/marcysutton/empathy-driven-development/tree/v3.0.6) & [v3.0.7](https://github.com/marcysutton/empathy-driven-development/tree/v3.0.7)
-- Accessible title changes - fixed in [v3.0.8](https://github.com/marcysutton/empathy-driven-development/tree/v3.0.8)
+
 
 
 

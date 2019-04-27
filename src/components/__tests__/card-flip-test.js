@@ -3,7 +3,7 @@ import axe from 'axe-core'
 import { shallow, mount, simulate } from 'enzyme'
 import utils from '../../../test/utils'
 
-import CardFlip from '../card-flip'
+import CardFlip from '../card-flip/'
 
 describe('Card flipping', () => {
     let member, CardFlipComponent

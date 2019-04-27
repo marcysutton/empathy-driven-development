@@ -1,0 +1,89 @@
+#tripPlanner {
+  background-color: #f2f2f2;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  border: 1px solid black;
+  color: #999;
+  margin: 0 auto;
+  max-width: 800px;
+}
+#tripPlanner form > div {
+  align-items: center;
+  display: flex;
+  padding: 1em;
+}
+#tripPlanner button {
+  background-color: #f5f5f5;
+  -webkit-appearance: none;
+  height: 32px;
+  width: 32px;
+}
+#tripPlanner .button-wrap.left {
+  margin-right: 1em;
+}
+#tripPlanner .button-wrap.right {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+#tripPlanner label.fit {
+  flex-grow: 2;
+  margin: 0;
+  padding: 1em;
+  width: 40%;
+}
+#tripPlanner label.fit input,
+#tripPlanner .button-wrap button {
+  border: 1px solid #666;
+}
+#tripPlanner button.expand {
+  background-color: #878c96;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  border: none;
+  color: #fff;
+}
+#tripPlanner label input {
+  border: 0;
+  height: 32px;
+  padding: 0.25em;
+  width: 100%;
+}
+#tripPlanner .inputGroup {
+  border: 1px solid #666;
+  display: flex;
+  margin-bottom: 1em;
+  margin-left: 4em;
+  padding: 0;
+  width: 39%;
+}
+#tripPlanner .select {
+  border: 1px solid #666;
+  background-color: white;
+  height: 32px;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  width: 32%;
+}
+#tripPlanner .select select {
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+#tripPlanner .inputGroup label {
+  flex-grow: 2;
+}
+#tripPlanner .inputGroup input {
+  border: 0;
+  height: 100%;
+  text-align: center;
+}
+#tripPlanner .inputGroup button {
+  border: 0;
+  padding: 0.25em 0.5em;
+}
+#tripPlanner .button-wrap .submit {
+  background-color: #b30000;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  border: none;
+  color: white;
+  margin-left: 1.5em;
+  width: 50px;
+}
