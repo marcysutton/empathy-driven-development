@@ -20,6 +20,9 @@ coverage
 # nyc test coverage
 .nyc_output
 
+# Cypress coverage
+cypress/integration/examples
+
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
@@ -57,6 +60,7 @@ typings/
 # gatsby files
 .cache/
 public
+public/*
 
 # Mac files
 .DS_Store

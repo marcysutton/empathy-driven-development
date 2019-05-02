@@ -24,46 +24,40 @@ function TripPlanner() {
             <div>
               <div className="button-wrap left">
                 <button type="button" title="My trips">
-                  <span className="visuallyhidden">My trips</span>
                   <i className="fa fa-star"></i>
                 </button>
               </div>
-              <label className="fit">
-                <span className="visuallyhidden">Name of trip</span>
+              <div className="label fit">
                 <input type="text" placeholder="Name of trip" name="tripName" required />
-              </label>
-              <label className="fit">
-                <span className="visuallyhidden">Name of wilderness area</span>
+              </div>
+              <div className="label fit">
                 <input type="text" placeholder="Name of wilderness area" name="areaName" required />
-              </label>
+              </div>
               <div className="button-wrap">
                 <button type="button" className="expand" title="Expand">
-                  <span className="visuallyhidden">Expand widget</span>
                   <i className="fa fa-caret-down"></i>
                 </button>
               </div>
             </div>
             <div>
               <div className="inputGroup left">
-                <button type="button" aria-label="Select a previous date">
+                <button type="button">
                   <i className="fa fa-caret-left"></i>
                 </button>
-                <label>
-                  <span className="visuallyhidden">Date of trip</span>
+                <div className="label">
                   <input type="text" placeholder="2.5.19" name="date" />
-                </label>
-                <button type="button" aria-label="Select a later date">
+                </div>
+                <button type="button">
                   <i className="fa fa-caret-right"></i>
                 </button>
               </div>
               <div className="button-wrap right">
-                <button type="button" aria-label="Date picker">
+                <button type="button">
                   <i className="fa fa-calendar"></i>
                 </button>
               </div>
               <div className="select right">
-                <label>
-                  <span className="visuallyhidden">type of trip</span>
+                <div className="label">
                   <select name="type" required>
                     <option>Type of trip</option>
                     <option>Van camp</option>
@@ -72,7 +66,7 @@ function TripPlanner() {
                     <option>Kayak tour</option>
                     <option>Bikepacking</option>
                   </select>
-                </label>
+                </div>
               </div>
               <div className="button-wrap right">
                 <button className="submit">

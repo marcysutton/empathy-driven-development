@@ -17,11 +17,14 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
-    "react-menu-aim": "^2.0.0",
     "react-modal": "^3.8.1"
   },
   "devDependencies": {
-    "prettier": "^1.17.0"
+    "cypress": "^3.2.0",
+    "cypress-axe": "^0.4.1",
+    "gatsby-cypress": "^0.1.9",
+    "prettier": "^1.17.0",
+    "start-server-and-test": "^1.9.0"
   },
   "keywords": [
     "gatsby"
@@ -33,7 +36,9 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "cy:open": "cypress open",
+    "test:dev": "CYPRESS_SUPPORT=y start-server-and-test develop http://localhost:8000 cy:open",
+    "test": "CYPRESS_SUPPORT=y npm run build && start-server-and-test serve http://localhost:9000 cy:open"
   },
   "repository": {
     "type": "git",

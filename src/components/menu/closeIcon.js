@@ -61,7 +61,6 @@ export default class CloseIcon extends Component {
       >
         {icon}
         <div onClick={this.props.onClick} style={buttonStyle}>
-          {/* Close Menu */}
         </div>
       </div>
     );

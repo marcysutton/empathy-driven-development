@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React, { useState, useRef } from "react"
 import ReactDOM from "react-dom"
 import PropTypes from "prop-types"
@@ -16,8 +9,6 @@ import Menu from "./menu/menu"
 import SignupForm from "./signup-form"
 import "./layout.css"
 
-// Modal.setAppElement('#root')
-
 let modalStyles = {
   overlay : {
     backgroundColor: 'rgba(68,68,68,.95)',
@@ -26,8 +17,6 @@ let modalStyles = {
 }
 function Layout({ children }) {
     const [state, setState] = useState({ modalOpen: false, menuOpen: false })
-    // const mainRef = useRef(null)
-    // const firstItemRef = useRef(null)
 
     const data = useStaticQuery(graphql`
       query SiteTitleQuery {
@@ -39,21 +28,6 @@ function Layout({ children }) {
         }
       }
     `)
-    const isMenuOpen = (state) => {
-      if (state.isOpen) {
-        setTimeout(function() {
-          // firstItemRef.current.focus()
-        }, 100)
-      }
-    }
-    const focusMain = () => {
-      setState({menuOpen: false})
-      // mainRef.current.focus()
-    }
-    // const focusFirstItem = () => {
-    //   setState({menuOpen: false})
-    //   firstItem.focus()
-    // }
     const onUpdate = (modalOpen) => {
       setState({modalOpen})
     }
@@ -63,15 +37,11 @@ function Layout({ children }) {
     return (
       <div id="app-wrap">
         <Menu
-          isOpen={state.menuOpen}
-          onStateChange={ isMenuOpen }>
+          isOpen={state.menuOpen}>
           <ul>
               <li><Link 
                   to="/"
-                  onClick={focusMain}
               >
-                  {/* ref={firstItemRef} */}
-                  {/* onClick={focusMain} */}
                   <i className="fa fa-fw fa-home" />
                   <span>Home</span>
               </Link></li>
@@ -100,7 +70,6 @@ function Layout({ children }) {
             }}
           >
             <div className="main-content">{children}</div> 
-            {/* ref={mainRef} */}
             <footer>
               © {new Date().getFullYear()}, Built with
               {` `}
@@ -117,7 +86,6 @@ function Layout({ children }) {
           <div 
             className="close-btn"
             onClick={onUpdate}>
-            {/* aria-label="Close modal" */}
             X
           </div>
           {SignupForm}

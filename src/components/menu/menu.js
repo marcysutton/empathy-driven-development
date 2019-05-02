@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import baseStyles from './baseStyles'
 import MenuIcon from './menuIcon'
@@ -63,7 +63,6 @@ export default class Menu extends Component {
 
     if (this.state.isOpen && (e.key === 'Escape' || e.keyCode === 27)) {
       this.toggleMenu();
-      // ReactDOM.findDOMNode(this.refs.menuIcon).focus();
     }
   }
 
@@ -107,7 +106,6 @@ export default class Menu extends Component {
           className={`m-menu-wrap ${this.props.className}`}
           style={this.getStyles('menuWrap')}
         >
-          {/* inert={this.state.isOpen ? null : ''} */}
           <div className={`m-menu ${this.props.menuClassName}`} style={this.getStyles('menu')} >
             <nav className={`m-item-list ${this.props.itemListClassName}`}>
               {React.Children.map(this.props.children, (item, index) => {
@@ -128,7 +126,6 @@ export default class Menu extends Component {
           className={this.props.menuButtonClassName}
           barClassName={this.props.menuBarClassName}
         />
-          {/* ref="menuIcon" */}
       </div>
     );
   }
