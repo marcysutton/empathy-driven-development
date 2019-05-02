@@ -14,7 +14,7 @@ export default [{
 },
 {
     name: 'Butterscotch',
-    headshot: require('../images/bagley.jpg'),
+    headshot: require('../images/mini-horse.jpg'),
     subtitle: 'My future mini horse',
     bio: "Kickin' cow his him boobtube damn moonshine skedaddled. Gal ain't havin' dirty tractor crazy tin. Hogjowls hold cain't hardware horse gospel tractor kinfolk, down.",
     twitterLink: 'http://twitter.com'

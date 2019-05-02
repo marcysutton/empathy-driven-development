@@ -60,9 +60,9 @@ export default class CloseIcon extends Component {
         style={{...buttonWrapperStyle, ...this.props.styles.mCloseButton}}
       >
         {icon}
-        <button onClick={this.props.onClick} style={buttonStyle}>
-          Close Menu
-        </button>
+        <div onClick={this.props.onClick} style={buttonStyle}>
+          {/* Close Menu */}
+        </div>
       </div>
     );
   }

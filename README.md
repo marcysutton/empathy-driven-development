@@ -18,9 +18,12 @@ https://github.com/marcysutton/empathy-driven-development
 
 
 
-
+## Outdoor Trip Planner App
 ### Components
-
+- Collapsible sidebar menu
+- Form
+- Carousel
+- Modal dialog
 
 
 

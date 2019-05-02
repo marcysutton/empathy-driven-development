@@ -1,15 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import Layout from "../components/layout"
 
 class GearList extends Component {
   render() {
     return (
-      <div>
+      <Layout>
         <h2>Gear Packing List</h2>
         <p>It’s a bummer to forget a critical item when you’re headed to a cold snowy place.
         Here’s a handy checklist of things you might need.</p>
         <div className="gearlist">
           <div>
-            <h3>All days</h3>
+            <h3>All winter days</h3>
             <ul>
               <li>Snow jacket</li>
               <li>Snow pants</li>
@@ -44,8 +45,8 @@ class GearList extends Component {
             </ul>
           </div>
         </div>
-      </div>
+      </Layout>
     )
   }
 }
-export default GearList;
+export default GearList

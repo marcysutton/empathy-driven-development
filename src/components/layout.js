@@ -26,8 +26,8 @@ let modalStyles = {
 }
 function Layout({ children }) {
     const [state, setState] = useState({ modalOpen: false, menuOpen: false })
-    const mainRef = useRef(null)
-    const firstItemRef = useRef(null)
+    // const mainRef = useRef(null)
+    // const firstItemRef = useRef(null)
 
     const data = useStaticQuery(graphql`
       query SiteTitleQuery {
@@ -42,13 +42,13 @@ function Layout({ children }) {
     const isMenuOpen = (state) => {
       if (state.isOpen) {
         setTimeout(function() {
-          firstItemRef.current.focus()
+          // firstItemRef.current.focus()
         }, 100)
       }
     }
     const focusMain = () => {
       setState({menuOpen: false})
-      mainRef.current.focus()
+      // mainRef.current.focus()
     }
     // const focusFirstItem = () => {
     //   setState({menuOpen: false})
@@ -68,28 +68,24 @@ function Layout({ children }) {
           <ul>
               <li><Link 
                   to="/"
-                  ref={firstItemRef}
                   onClick={focusMain}
               >
+                  {/* ref={firstItemRef} */}
+                  {/* onClick={focusMain} */}
                   <i className="fa fa-fw fa-home" />
                   <span>Home</span>
               </Link></li>
-              <li><Link to="/inspiration">
+              <li><Link to="/gallery">
                   <i className="fa fa-fw fa-star" />
-                  <span>Gallery</span>
+                  <span>Inspiration</span>
               </Link></li>
-              <li><Link to="/gearlist"
-                  onClick={focusMain}>
+              <li><Link to="/gearlist">
                   <i className="fa fa-fw fa-suitcase" />
                   <span>Gear Packing List</span>
               </Link></li>
-              <li><Link to="/trips">
-                  <i className="fa fa-fw fa-plane" />
-                  <span>Trip Suggestions</span>
-              </Link></li>
-              <li><Link to="/about">
+              <li><Link to="/friends">
                   <i className="fa fa-fw fa-question-circle" />
-                  <span>About</span>
+                  <span>Friends</span>
               </Link></li>
           </ul>
         </Menu>
@@ -103,7 +99,8 @@ function Layout({ children }) {
               paddingTop: 0,
             }}
           >
-            <main ref={mainRef}>{children}</main>
+            <div className="main-content">{children}</div> 
+            {/* ref={mainRef} */}
             <footer>
               © {new Date().getFullYear()}, Built with
               {` `}
@@ -117,12 +114,12 @@ function Layout({ children }) {
           className="modal"
           style={modalStyles}
         >
-          <button 
+          <div 
             className="close-btn"
-            onClick={onUpdate}
-            aria-label="Close modal">
+            onClick={onUpdate}>
+            {/* aria-label="Close modal" */}
             X
-          </button>
+          </div>
           {SignupForm}
         </Modal>
       </div>

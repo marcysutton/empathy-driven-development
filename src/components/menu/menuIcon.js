@@ -52,16 +52,16 @@ export default class MenuIcon extends Component {
     }
 
     return (
-      <button
+      <div
         onClick={this.props.onClick}
         onMouseOver={() => this.setState({hover: true})}
         onMouseOut={() => this.setState({hover: false})}
         className={`m-menu-button ${this.props.className}`}
         style={buttonStyle}
-        aria-label="Open menu"
         >
+        {/* aria-label="Open menu" */}
         {icon}
-      </button>
+      </div>
     );
   }
 }

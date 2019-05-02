@@ -9,6 +9,7 @@ const FriendsPage = () => (
   <Layout>
     <SEO title="Which friends can come" />
     <div>
+      <h2>Which friends shall we bring?</h2>
       <CardFlip
         member={friends[0]}
         memberName={friends[0].name}
