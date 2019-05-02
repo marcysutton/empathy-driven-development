@@ -1,5 +1,4 @@
-import React, { useState, useRef } from "react"
-import ReactDOM from "react-dom"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Modal from "react-modal"
@@ -69,7 +68,7 @@ function Layout({ children }) {
               paddingTop: 0,
             }}
           >
-            <div className="main-content">{children}</div> 
+            <div className="main-content">{children}</div>
             <footer>
               © {new Date().getFullYear()}, Built with
               {` `}
@@ -85,7 +84,7 @@ function Layout({ children }) {
         >
           <div 
             className="close-btn"
-            onClick={onUpdate}>
+            onClick={onUpdate.bind(this, false)}>
             X
           </div>
           {SignupForm}

@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react'
+import React from 'react'
 
 export const TripPlans = ((props) => {
     let data = props.data

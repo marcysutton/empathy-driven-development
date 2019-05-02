@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react'
+import React, { useState } from 'react'
 
 import './trip-planner.css'
 import { TripPlans } from './trip-plans'

@@ -62,6 +62,7 @@ a:focus {
   right: 0.25em;
 }
 .close-btn {
+  padding: 1em;
   position: absolute;
   right: 0;
 }
