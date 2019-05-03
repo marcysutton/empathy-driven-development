@@ -4,6 +4,7 @@ module.exports = {
     description: `Kick off your next, great camping trip with this Gatsby site.`,
     author: `@marcysutton`,
   },
+  pathPrefix: "/empathy-driven-development",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
