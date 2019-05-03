@@ -24,13 +24,13 @@
   margin-left: 1em;
   margin-bottom: 1em;
 }
-#tripPlanner div.label.fit {
+#tripPlanner .label.fit {
   flex-grow: 2;
   margin: 0;
   padding: 1em;
   width: 40%;
 }
-#tripPlanner div.label.fit input,
+#tripPlanner .label.fit input,
 #tripPlanner .button-wrap button {
   border: 1px solid #666;
 }
@@ -40,7 +40,7 @@
   border: none;
   color: #fff;
 }
-#tripPlanner div.label input {
+#tripPlanner .label input {
   border: 0;
   height: 32px;
   padding: 0.25em;
@@ -67,7 +67,7 @@
   height: 100%;
   width: 100%;
 }
-#tripPlanner .inputGroup div.label {
+#tripPlanner .inputGroup .label {
   flex-grow: 2;
 }
 #tripPlanner .inputGroup input {

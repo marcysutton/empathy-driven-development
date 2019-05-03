@@ -23,18 +23,22 @@ function TripPlanner() {
           <form onSubmit={submitFn} name="tripForm">
             <div>
               <div className="button-wrap left">
-                <button type="button" title="My trips">
+                <button type="button">
+                  <span className="visuallyhidden">My trips</span>
                   <i className="fa fa-star"></i>
                 </button>
               </div>
-              <div className="label fit">
+              <label className="label fit">
+                <span className="visuallyhidden">Name of trip</span>
                 <input type="text" placeholder="Name of trip" name="tripName" required />
-              </div>
-              <div className="label fit">
+              </label>
+              <label className="label fit">
+                <span className="visuallyhidden">Name of wilderness area</span>
                 <input type="text" placeholder="Name of wilderness area" name="areaName" required />
-              </div>
+              </label>
               <div className="button-wrap">
                 <button type="button" className="expand" title="Expand">
+                  <span className="visuallyhidden">Expand widget</span>
                   <i className="fa fa-caret-down"></i>
                 </button>
               </div>
@@ -42,22 +46,27 @@ function TripPlanner() {
             <div>
               <div className="inputGroup left">
                 <button type="button">
+                  <span className="visuallyhidden">Select a previous date</span>
                   <i className="fa fa-caret-left"></i>
                 </button>
-                <div className="label">
-                  <input type="text" placeholder="2.5.19" name="date" />
-                </div>
+                <label className="label">
+                  <span className="visuallyhidden">Type in date of trip</span>
+                  <input type="text" placeholder="3.5.19" name="date" />
+                </label>
                 <button type="button">
+                  <span className="visuallyhidden">Select a later date</span>
                   <i className="fa fa-caret-right"></i>
                 </button>
               </div>
               <div className="button-wrap right">
                 <button type="button">
+                  <span className="visuallyhidden">Date picker</span>
                   <i className="fa fa-calendar"></i>
                 </button>
               </div>
               <div className="select right">
-                <div className="label">
+                <label className="label">
+                <span className="visuallyhidden">Type of trip</span>
                   <select name="type" required>
                     <option>Type of trip</option>
                     <option>Van camp</option>
@@ -66,7 +75,7 @@ function TripPlanner() {
                     <option>Kayak tour</option>
                     <option>Bikepacking</option>
                   </select>
-                </div>
+                </label>
               </div>
               <div className="button-wrap right">
                 <button className="submit">

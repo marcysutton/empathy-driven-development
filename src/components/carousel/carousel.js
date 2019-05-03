@@ -6,11 +6,10 @@ import "./carousel.css"
 const Carousel = ({images, altTexts}) => {
     const [state, setState] = useState({ slideIndex: 0 })
     const lastIndex = images.length - 1
-    let labelTexts = []
 
     // Next/previous controls
     const prevSlide = (() => {
-        if (state.slideIndex > 1) {
+        if (state.slideIndex >= 1) {
             setState({slideIndex: state.slideIndex - 1 })
         }
     })
@@ -23,17 +22,6 @@ const Carousel = ({images, altTexts}) => {
     const changeSlide = ((n) => {
         setState({slideIndex: n})
     })
-    // Labeling
-    const prepLabel = ((num, imageName) => {
-        let rval = 1
-        for (var i = 2; i <= num; i++)
-            rval = rval + i
-
-        for (var k = 0; k < rval; k++)
-            labelTexts.push(`${imageName}`)
-        
-        return labelTexts.toString()
-    })
 
     return (
         <div className="slideshow-container">
@@ -43,29 +31,30 @@ const Carousel = ({images, altTexts}) => {
                     key={`image-${index}`}
                     className={`${state.slideIndex === index ? `visible` : ``} slideshow-slide`}
                 >
-                    <Img fluid={images.node.childImageSharp.fluid} alt={`${prepLabel(index, altTexts[index])}`} />
+                    <Img fluid={images.node.childImageSharp.fluid} alt={altTexts[index]} />
                 </div>
                 })
             }
             </div>
             {/* <!-- Next and previous buttons --> */}
-            <a className={`${state.slideIndex === 0 ? 'hidden' : `` } slideshow-prev`} 
-                onClick={prevSlide}>
+            <button className={`${state.slideIndex === 0 ? 'hidden' : `` } slideshow-prev`} 
+                onClick={prevSlide} aria-label="Previous slide">
                 &#10094;
-            </a>
-            <a className={`${state.slideIndex === lastIndex ? 'hidden' : `` } slideshow-next`}
-                onClick={nextSlide}>
+            </button>
+            <button className={`${state.slideIndex === lastIndex ? 'hidden' : `` } slideshow-next`}
+                onClick={nextSlide} aria-label="Next slide">
                 &#10095;
-            </a>
+            </button>
 
             {/* <!-- The dots/circles --> */}
             <div className="slideshow-dots">
                 {images.map((images, index) => {
-                    return <span 
+                    return <button 
                         key={`dot-${index}`}
                         className={`${state.slideIndex === index ? `current` : ``} slideshow-dot`}
-                        onClick={changeSlide.bind(this, index)}>
-                    </span>
+                        onClick={changeSlide.bind(this, index)}
+                        aria-label={`image ${index}`}>
+                    </button>
                 })}
             </div>
         </div>

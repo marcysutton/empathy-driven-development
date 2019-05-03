@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ReactDOM from "react-dom"
 import PropTypes from 'prop-types'
 import baseStyles from './baseStyles'
 import MenuIcon from './menuIcon'
@@ -62,6 +63,7 @@ export default class Menu extends Component {
 
     if (this.state.isOpen && (e.key === 'Escape' || e.keyCode === 27)) {
       this.toggleMenu();
+      ReactDOM.findDOMNode(this.refs.menuIcon).focus();
     }
   }
 
@@ -94,7 +96,7 @@ export default class Menu extends Component {
 
   render() {
     return (
-      <div className="menu">
+      <nav className="menu">
         <div
           className={`m-overlay ${this.props.overlayClassName}`}
           onClick={() => !this.shouldDisableOverlayClick() && this.toggleMenu()}
@@ -104,6 +106,7 @@ export default class Menu extends Component {
           id={this.props.id}
           className={`m-menu-wrap ${this.props.className}`}
           style={this.getStyles('menuWrap')}
+          inert={this.state.isOpen === true ? null : ''}
         >
           <div className={`m-menu ${this.props.menuClassName}`} style={this.getStyles('menu')} >
             <nav className={`m-item-list ${this.props.itemListClassName}`}>
@@ -125,7 +128,7 @@ export default class Menu extends Component {
           className={this.props.menuButtonClassName}
           barClassName={this.props.menuBarClassName}
         />
-      </div>
+      </nav>
     );
   }
 }

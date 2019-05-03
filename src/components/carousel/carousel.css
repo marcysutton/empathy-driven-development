@@ -17,11 +17,13 @@
 
 /* Next & previous buttons */
 .slideshow-prev, .slideshow-next {
+  background-color: transparent;
+  border: none;
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -52px;
   padding: 32px;
   color: #000;
   font-weight: bold;
@@ -43,6 +45,7 @@
 /* On hover, add a black background color with a little bit see-through */
 .slideshow-prev:hover, .slideshow-next:hover {
   background-color: rgba(0,0,0,0.8);
+  color: #fff;
 }
 
 .slideshow-prev.hidden,

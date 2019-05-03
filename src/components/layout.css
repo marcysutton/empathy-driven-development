@@ -24,9 +24,9 @@ header h1 {
     margin: 1.5em 0;
 }
 a {
-  color: #999;
-  text-decoration: none;
+  color: inherit;
   font-weight: bold;
+  text-decoration: underline;
 }
 a:hover,
 a:focus {
