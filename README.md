@@ -10,7 +10,7 @@
 
 ```
 # Empathy Driven Development
-https://marcysutton.github.io/empathy-driven-development
+https://github.com/marcysutton/empathy-driven-development
 
 ## By Marcy Sutton / @marcysutton
 Head of Learning, Gatsby
