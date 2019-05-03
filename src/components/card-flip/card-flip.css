@@ -8,7 +8,7 @@
 .team-content {
     padding: 0;
     position: relative;
-    z-index: 100;
+    z-index: 1;
     margin-top: 0;
     margin-bottom: 0px;
     width: 320px;
