@@ -10,21 +10,24 @@
 
 ```
 
-# By Marcy Sutton / @marcysutton
+# Empathy Driven Development
+https://marcysutton.github.io/empathy-driven-development
+
+## By Marcy Sutton / @marcysutton
 Head of Learning, Gatsby
 
-## Empathy Driven Development - Live Accessibility Debugging in a Gatsby / React Application
-https://github.com/marcysutton/empathy-driven-development
 
 
 
 ## Outdoor Trip Planner App
+The master branch of this repository is intentionally broken for accessibility. For fixes, check out the [fixes](https://github.com/marcysutton/empathy-driven-development/tree/fixes) branch.
+
 ### Components
 - Collapsible sidebar menu
 - Form
 - Carousel
 - Modal dialog
-
+- Card flip
 
 
 
@@ -72,4 +75,7 @@ https://github.com/marcysutton/empathy-driven-development
 ### In this app
 
 - cypress-axe https://www.npmjs.com/package/cypress-axe
+- axe-core https://www.npmjs.com/package/axe-core
 - Inert polyfill https://github.com/WICG/inert
+- What Input https://github.com/ten1seven/what-input
+- Focus Trap React https://github.com/davidtheclark/focus-trap-react
