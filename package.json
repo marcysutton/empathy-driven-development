@@ -1,10 +1,11 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "empathy-driven-development",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A Gatsby site to demonstrate accessibility issues",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Marcy Sutton <marcy@gatsbyjs.com>",
   "dependencies": {
+    "focus-trap-react": "^6.0.0",
     "gatsby": "^2.3.31",
     "gatsby-image": "^2.0.40",
     "gatsby-plugin-manifest": "^2.0.29",
@@ -40,14 +41,13 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "cy:open": "cypress open",
-    "test:dev": "CYPRESS_SUPPORT=y start-server-and-test develop http://localhost:8000 cy:open",
-    "test": "CYPRESS_SUPPORT=y npm run build && start-server-and-test serve http://localhost:9000 cy:open"
+    "test": "CYPRESS_SUPPORT=y start-server-and-test develop http://localhost:8000 cy:open"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/marcysutton/empathy-driven-development"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/marcysutton/empathy-driven-development/issues"
   }
 }
