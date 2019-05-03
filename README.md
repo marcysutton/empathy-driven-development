@@ -9,14 +9,17 @@
 |__/ |___  \/  |___ |___ \__/ |     |  | |___ | \|  |              
 
 ```
-
-# By Marcy Sutton / @marcysutton
-
-## Empathy Driven Development
+# Empathy Driven Development
 https://marcysutton.github.io/empathy-driven-development
 
+## By Marcy Sutton / @marcysutton
+Head of Learning, Gatsby
 
 
+
+
+## Outdoor Trip Planner App
+The master branch of this repository is intentionally broken for accessibility. For fixes, check out the [fixes](https://github.com/marcysutton/empathy-driven-development/tree/fixes) branch.
 
 ### Components
 - Collapsible sidebar menu
@@ -24,7 +27,6 @@ https://marcysutton.github.io/empathy-driven-development
 - Carousel
 - Modal dialog
 - Card flip
-
 
 
 
@@ -77,3 +79,4 @@ https://marcysutton.github.io/empathy-driven-development
 - What Input https://github.com/ten1seven/what-input
 - cypress-axe https://www.npmjs.com/package/cypress-axe
 - axe-core https://github.com/dequelabs/axe-core
+- Focus Trap React https://github.com/davidtheclark/focus-trap-react
