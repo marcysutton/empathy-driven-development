@@ -1,0 +1,40 @@
+.m-menu-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+.m-menu-bars {
+  background: #373a47;
+}
+.m-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+.m-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.m-menu li {
+  margin: 0 0 1em;
+}
+.m-menu a {
+  color: #b8b7ad;
+}
+.m-menu a:hover,
+.m-menu a:focus {
+  color: #c94e50;
+}
+.m-item-list a {
+  padding: 0.8em;
+}
+.m-item-list a span {
+  margin-left: 10px;
+  font-weight: 700;
+}
+.m-close {
+  background: #bdc3c7;
+}

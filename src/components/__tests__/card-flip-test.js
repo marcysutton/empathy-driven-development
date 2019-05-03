@@ -29,7 +29,7 @@ describe('Card flipping', () => {
         
         component.setState({ isActive: true })
 
-        expect(component.find('.active').length).toBe(1)
+        expect(component.find('.team-image.active').length).toBe(1)
         done()
     })
     
@@ -43,9 +43,9 @@ describe('Card flipping', () => {
                 twitterLink={member.twitterLink} />
         )
 
-        component.find('.toggle-button').simulate('keydown', { key: 'Enter' })
+        component.simulate('keydown', { key: 'Enter' })
 
-        expect(component.find('.active').length).toBe(1)
+        expect(component.find('.team-image.active').length).toBe(1)
         done()
     })
 

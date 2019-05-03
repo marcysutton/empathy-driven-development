@@ -1,0 +1,157 @@
+@import 'reset.css';
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,800);
+
+body {
+  height: 100%;
+  background: #444;
+  color: #999;
+  font-family: 'Raleway', Arial, sans-serif;
+}
+#app-wrap, .primary {
+  height: 100%;
+}
+.primary {
+  height: 100%;
+  text-align: center;
+  background: #b4bad2;
+  color: #000;
+  overflow: scroll;
+}
+header {
+    text-align: center;
+}
+header h1 {
+    margin: 1.5em 0;
+}
+a {
+  color: #999;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover,
+a:focus {
+  color: #c94e50;
+}
+.visuallyhidden { 
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.offscreen {
+    display: block;
+    position: absolute;
+    left: -500000px;
+  }
+.signup-btn, .close-btn, .submit-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  -webkit-appearance: none;
+}
+.signup-btn {
+  font-size: 1.25em;
+  position: absolute;
+  top: 0.25em;
+  right: 0.25em;
+}
+.close-btn {
+  padding: 1em;
+  position: absolute;
+  right: 0;
+}
+.submit-btn {
+  background-color: white;
+  color: black;
+  margin-top: 2em;
+}
+.App-title {
+  font-weight: 800;
+  font-size: 3.5em;
+  margin: 0.67em 0;
+}
+
+.gallery {
+  background-color: white;
+  color: black;
+  margin-top: 2em;
+  padding-top: 1em;
+}
+.gallery > div {
+  display: flex;
+  justify-content: center;
+}
+.gallery figure {
+  margin: 1em;
+}
+.gallery figure img {
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  max-width: 100%;
+}
+.modal {
+  color: #fff;
+  text-align: center;
+}
+.modal h1 {
+  margin: 0;
+  padding-top: 1em;
+}
+.signup {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 2em;
+}
+.field {
+  display: block;
+  margin: 1em auto;
+  max-width: 400px;
+  text-align: left;
+}
+.field span {
+  display: inline-block;
+  width: 30%;
+}
+.field input {
+  margin-left: 1em;
+}
+.field > input,
+.field > div {
+  display: inline-block;
+  width: 60%;
+}
+.gearlist {
+  background-color: #fff;
+  color: black;
+  display: flex;
+  margin-top: 2em;
+  min-height: 600px;
+  justify-content: center;
+  padding: 1em;
+}
+.gearlist div {
+  flex-basis: 30%;
+}
+.gearlist ul {
+  font-size: 1.25em;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+@media screen and (max-width: 40em) {
+  .primary {
+    font-size: 80%;
+  }
+  .App-title {
+    padding-top: 1em;
+    font-size: 2.5em;
+  }
+}
+
+@import 'trip-planner/trip-planner.css';

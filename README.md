@@ -19,9 +19,11 @@ https://marcysutton.github.io/empathy-driven-development
 
 
 ### Components
-- Login form
-- Card-flip component
-- Live region with title change
+- Collapsible sidebar menu
+- Form
+- Carousel
+- Modal dialog
+- Card flip
 
 
 
@@ -49,7 +51,9 @@ https://marcysutton.github.io/empathy-driven-development
 - Egghead.io A11y course https://egghead.io/courses/start-building-accessible-web-applications-today
 - Udacity Course https://www.udacity.com/course/web-accessibility--ud891
 - Notes on Client-Rendered Accessibility https://www.smashingmagazine.com/2015/05/client-rendered-accessibility/
-- aXe Accessibility Testing Tools https://axe-core.org
+- Accessibility Tips in Single Page Applications https://www.deque.com/blog/accessibility-tips-in-single-page-applications/
+- aXe Accessibility Testing Tools https://deque.com/axe
+- Writing automated tests for accessibility https://www.24a11y.com/2017/writing-automated-tests-accessibility/
 
 
  
@@ -66,9 +70,10 @@ https://marcysutton.github.io/empathy-driven-development
 
 
 
+
 ### In this app
 
-- axe-core https://github.com/dequelabs/axe-core
+- Inert polyfill https://github.com/WICG/inert
 - What Input https://github.com/ten1seven/what-input
-- Focus-trap-react https://github.com/davidtheclark/focus-trap-react
-- react-announce-doc-title https://github.com/marcysutton/react-announce-doc-title
+- cypress-axe https://www.npmjs.com/package/cypress-axe
+- axe-core https://github.com/dequelabs/axe-core
