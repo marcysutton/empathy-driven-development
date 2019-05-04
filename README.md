@@ -29,6 +29,28 @@ The master branch of this repository is intentionally broken for accessibility. 
 - Modal dialog
 - Card flip
 
+### How to run the app
+
+Clone the directory and install dependencies:
+```
+git clone https://github.com/marcysutton/empathy-driven-development && cd empathy-driven-development
+npm install
+```
+
+Then you can run Gatsby in development or production mode:
+```
+gatsby develop
+```
+or:
+```
+gatsby build && gatsby serve
+```
+#### Run tests
+
+Run Cypress tests on the command line:
+```
+npm run test
+```
 
 
 
